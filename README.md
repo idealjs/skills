@@ -32,6 +32,15 @@ AI 交互式梳理你的叙述，经你认同后落笔；不认同，就继续�
 - SKILL 本体：[skills/distill/SKILL.md](skills/distill/SKILL.md)
 - 写作准则：[skills/distill/references/blog-style.md](skills/distill/references/blog-style.md)
 
+## distill-ui
+
+设计系统不长在模板里，长在人脑子里：真正的原则、token 取舍、组件边界，要一条条问出来。distill-ui 是 distill 的姊妹篇——对话式元 skill，沿五层（设计原则、核心基础、组件与模式、文档与知识、治理与运营）把需求方脑中的设计系统问成显性规则，铸出他自己的 ui-skill；此后 AI 写界面，加载即受约束。
+
+它自己不含任何设计：五层是提问的地图，不是内容。治理层专为多产品而设——A、B、C 锁着 1.0、1.1、1.2 时，升级手册和版本自省就是一致性的疫苗。
+
+- SKILL 本体：[skills/distill-ui/SKILL.md](skills/distill-ui/SKILL.md)
+- 来龙去脉：《一个不含设计的skill》（[skills/distill-ui/references/blog.md](skills/distill-ui/references/blog.md)）
+
 ## ai-era-tutorial
 
 读者的执行模式变了：教程被当成索引，agent 被当成手脚，人只负责指挥和核对输出。而锻炼住在"长过程"的那段路里，AI 恰恰把那段路变成了可以秒取的捷径。
@@ -76,7 +85,7 @@ doc-doc 按"读者受的苦"组织检测与改写，魂是读者友好，不是�
 
 把仓库地址和你想要的 skill 告诉你的 Agent，它会自行安装：
 
-> 请从 https://github.com/idealjs/skills 安装 code-tree、distill、ai-era-tutorial、micro-fullstack 和 doc-doc
+> 请从 https://github.com/idealjs/skills 安装 code-tree、distill、distill-ui、ai-era-tutorial、micro-fullstack 和 doc-doc
 
 装好后新开一个会话，输入 `/` 即可看到。SKILL.md 格式与 Claude Code 兼容，放进 `~/.claude/skills/` 同样生效。
 
