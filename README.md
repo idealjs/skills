@@ -62,11 +62,21 @@ micro-fullstack 以单机版为基准形态——SharedWorker 跑 hono + pglite 
 - SKILL 本体：[skills/micro-fullstack/SKILL.md](skills/micro-fullstack/SKILL.md)
 - 来龙去脉：《一套小微全栈栈是怎么被问出来的》（[skills/micro-fullstack/references/blog.md](skills/micro-fullstack/references/blog.md)）
 
+## doc-doc
+
+AI 写的成稿读起来累：新造对话里没出现过的名词、符号杂用、翻译腔、断句混乱、排版碎乱——问题混在一起，文档显得又多又乱，重点飞跃，主谓丢失。
+
+doc-doc 按"读者受的苦"组织检测与改写，魂是读者友好，不是移除 AI 指纹。证据来自 520 万字两轮语料实测（移植自 [lieflat-less-ai-tone](https://github.com/larashero3-dotcom/lieflat-less-ai-tone)，CC BY-NC），已否决的特征全部进 X 级永不改。skill 本体只有 markdown：计算规则全部文本化，要不要现场写一次性脚本算数字，由使用者决定——不点头就跳过并标"未测"，模型永远不估算冒充测量。
+
+- SKILL 本体：[skills/doc-doc/SKILL.md](skills/doc-doc/SKILL.md)
+- 检测清单：[skills/doc-doc/references/reader-pains.md](skills/doc-doc/references/reader-pains.md)
+- 来龙去脉：《读者友好，不是指纹移除》（[skills/doc-doc/references/blog.md](skills/doc-doc/references/blog.md)）
+
 ## 安装
 
 把仓库地址和你想要的 skill 告诉你的 Agent，它会自行安装：
 
-> 请从 https://github.com/idealjs/skills 安装 code-tree、distill、ai-era-tutorial 和 micro-fullstack
+> 请从 https://github.com/idealjs/skills 安装 code-tree、distill、ai-era-tutorial、micro-fullstack 和 doc-doc
 
 装好后新开一个会话，输入 `/` 即可看到。SKILL.md 格式与 Claude Code 兼容，放进 `~/.claude/skills/` 同样生效。
 
